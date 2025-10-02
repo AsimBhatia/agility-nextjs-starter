@@ -5,6 +5,8 @@ import PostDetails from "./PostDetails";
 import Heading from "./Heading";
 import TextBlockWithImage from "./TextBlockWithImage";
 import NoComponentFound from "./NoComponentFound";
+import HeroBanner from "./HeroBanner";
+
 
 
 // All of the Agility Page Module Components that are in use in this site need to be imported into this index file.
@@ -17,6 +19,7 @@ const allModules = [
 	{ name: "PostsListing", module: PostsListing },
 	{ name: "PostDetails", module: PostDetails },
 	{ name: "RichTextArea", module: RichTextArea },
+	{ name: "HeroBanner", module: HeroBanner }, //added HeroBanner Module in same fashion as other modules
 ];
 
 /**
@@ -34,3 +37,15 @@ export const getModule = (moduleName: string): any | null => {
 	if (!obj) return NoComponentFound;
 	return obj.module
 };
+
+// export const agilityComponents = {
+// 	"Hero Banner": HeroBanner,
+// 	Heading,
+// 	TextBlockWithImage,
+// 	RichTextArea,
+// 	FeaturedPost,
+// 	PostsListing,
+// 	PostDetails,
+// 	NoComponentFound,
+// };
+  
